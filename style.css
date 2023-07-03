@@ -1,3 +1,12 @@
+/* Colors */
+:root {
+  --black: #2C2347;
+  --primary: #5742AC;
+  --white: #ffffff;
+  --bodyText: #676276;
+  --surface: #F5F4FB;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,11 +14,17 @@
 }
 
 body {
+  color: var(--black);
   font-family: 'DM Sans', sans-serif;
   /* font-family: 'Lora', serif; */
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Global Classes */
+
 .btn {
   display: inline-block;
   border: none;
@@ -17,18 +32,19 @@ body {
 }
 
 .btn-primary {
-  background-color: #2C2347;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white) !important;
   border: 1px solid transparent;
   transition: all 0.3s;
 }
 
 .btn-primary:hover {
-  border: 1px solid #2C2347;
+  border: 1px solid var(--primary);
   background-color: transparent;
-  color: #2C2347;
+  color: var(--black);
   transition: all 0.3s;
 }
+
 /* ----- */
 /* Navbar */
 nav {
@@ -42,35 +58,45 @@ nav {
 }
 
 .navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
   list-style: none;
+
+}
+
+.navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .navlinks {
-  position: relative;
+  color: var(--black);
   display: inline-block;
-  text-decoration: none;
   text-transform: capitalize;
+  border-bottom: 1px solid transparent;
+  transition: 0.25s ease-out;
 }
 
-.navbar .navlinks::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  border-radius: 5px;
-  height: 0.05em;
-  bottom: 0;
-  left: 0;
-  background: currentcolor;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+.navbar .navlinks:hover {
+  border-bottom: 1px solid var(--black);
+  transition: 0.25s ease-in;
 }
 
-.navbar .navlinks:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.navBtn {
+  color: var(--white)!important;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: all 0.3s;
 }
 
+.navBtn:hover {
+  color: var(--black)!important;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  transition: all 0.3s;
+}
 
 .logo {
   text-align: center;
@@ -79,16 +105,4 @@ nav {
 .logo a {
   font-style: bold;
   font-size: 1.3rem;
-}
-
-.navbar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-}
-
-.navbar li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
