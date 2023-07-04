@@ -13,8 +13,9 @@
   <!-- Swiper JS -->
   <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
   <!-- Style -->
-  <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/sliderStyle.css">
+  <link rel="stylesheet" href="./styles/style.css" />
+
 
   <title>ABCANDY</title>
 </head>
@@ -40,12 +41,8 @@
   </header>
   <main>
     <!-- Hero / Slider with 3d-coverflow effect -->
-    <section id="hero">
-
-
-
-
-      <div class="swiper mySwiper">
+    <div class="shapeDivider">
+      <section class="swiper mySwiper">
         <div class="swiper-wrapper">
           <article class="swiper-slide">
             <img src="./images/slides/img-1.jpg" />
@@ -102,18 +99,32 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-
-
         <div class="swiper-pagination">
           <div class="paginationContainer"></div>
         </div>
+      </section>
+    </div>
+    <!-- blog section -->
+    <section id="blog">
+      <div class="blogMenu">
+        <div class="blogMenuContent">
+          <h2 class="blogTitle">Blog</h2>
+          <div class="blogCategoryContainer">
+            <ul class="blogCategory">
+              <li><a href="#" class="blogCategoryLink">Sports</a></li>
+              <li><a href="#" class="blogCategoryLink">Sports Car</a></li>
+              <li><a href="#" class="blogCategoryLink">Bike</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="blogMenuSearch">
+          <form class="blogSearch">
+            <input type="text" name="search" id="search">
+          </form>
+        </div>
       </div>
-
-
-
-
-
     </section>
+
   </main>
   <footer>
 
