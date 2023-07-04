@@ -1,0 +1,139 @@
+/* swiper.js styles */
+
+.swiper {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: transparent;
+    position: relative;
+}
+
+/* slides */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.swiper-slide.swiper-slide-active {
+    background-color: var(--white);
+    flex-basis: 60%;
+}
+
+
+.swiper-slide.swiper-slide-prev {
+    flex-basis: calc(20% - 80px);
+}
+
+.swiper-slide.swiper-slide-next {
+    flex-basis: calc(20% - 80px);
+
+}
+
+.swiper-slide.swiper-slide-active .slideInfoContainer {
+    display: block;
+}
+
+.swiper-slide.swiper-slide-prev::after,
+.swiper-slide.swiper-slide-next::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.slideInfoContainer {
+    display: none;
+    padding: 10px;
+}
+
+
+.teamDate {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+
+}
+
+.slideTeam {
+    font-weight: bold;
+
+}
+
+.slideDate {
+    color: var(--bodyText);
+}
+
+.slideBody {
+    padding-bottom: 10px;
+}
+
+.slideTitle {
+    padding: 15px 0px;
+    font-family: var(--ffLora);
+}
+
+/* paginations */
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    /* z-index: 1; */
+}
+
+.swiper-pagination-bullets::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 5%;
+    height: 100%;
+    border-radius: 30px;
+    left: auto;
+    top: 0;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #5742AC;
+    z-index: inherit;
+}
+
+/* arrows */
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: var(--black);
+    padding: 1.5rem;
+    color: var(--white);
+    position: absolute;
+}
+
+.swiper-button-prev {
+    top: 30%;
+    left: calc(20% - 8rem);
+}
+
+.swiper-button-next {
+    top: 30%;
+    right: calc(20% - 8rem);
+}

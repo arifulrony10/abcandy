@@ -17,6 +17,7 @@
 body {
   color: var(--black);
   font-family: 'DM Sans', sans-serif;
+  background-color: #d0d0d0;
 }
 
 a {
@@ -110,55 +111,3 @@ nav {
 
 /* --hero-- */
 .hero {}
-
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 60%;
-  /* max-width: 850px; */
-  height: 30%;
-  /* max-height: 400px; */
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-/* Slides */
-.slideContainer {
-  display: none;
-  padding: 10px;
-}
-
-.teamDate {
-  display: flex;
-  gap: 10px;
-  padding-top: 10px;
-
-}
-
-.slideTeam {
-  font-weight: bold;
-
-}
-
-.slideDate {
-  color: var(--bodyText);
-}
-
-.slideBody {
-  padding-bottom: 10px;
-}
-
-.slideTitle {
-  padding: 15px 0px;
-}
