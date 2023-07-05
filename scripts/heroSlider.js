@@ -83,15 +83,20 @@ const blogSwiper = new Swiper(".blogSwiper", {
 
 // video modal
 
-let playBtn = document.querySelector('.videoModal')
-let clip = document.querySelector('.clip')
-let video = document.querySelector('video')
+const playBtn = document.querySelector('.videoModal')
+const clip = document.querySelector('.clip')
+const video = document.querySelector('video')
 const playBtnContainer = document.querySelector('.playBtnContainer')
 
 
 const watchNowBtn = document.querySelector('.playBtnContainer')
 const watchNowBtn2 = document.querySelector('.watchNow2')
 const watchNowCloseBtn = document.querySelector('.videoModalCloseBtn')
+
+const loadMoreBtn = document.querySelector('#loadMoreBlog')
+const blog9 = document.querySelector('.blogPost9')
+const blog10 = document.querySelector('.blogPost10')
+const blog11 = document.querySelector('.blogPost11')
 
 watchNowBtn.onclick = () => {
     playBtn.classList.add('active')
@@ -108,4 +113,10 @@ watchNowCloseBtn.onclick = () => {
     playBtn.classList.remove('active')
     clip.classList.remove('active')
     video.pause()
+}
+
+loadMoreBtn.onclick = () => {
+    blog9.classList.add("active")
+    blog10.classList.add("active")
+    blog11.classList.add("active")
 }
