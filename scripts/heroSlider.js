@@ -90,9 +90,15 @@ const playBtnContainer = document.querySelector('.playBtnContainer')
 
 
 const watchNowBtn = document.querySelector('.playBtnContainer')
+const watchNowBtn2 = document.querySelector('.watchNow2')
 const watchNowCloseBtn = document.querySelector('.videoModalCloseBtn')
 
 watchNowBtn.onclick = () => {
+    playBtn.classList.add('active')
+    clip.classList.add('active')
+    video.play()
+}
+watchNowBtn2.onclick = () => {
     playBtn.classList.add('active')
     clip.classList.add('active')
     video.play()
