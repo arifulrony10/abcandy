@@ -1,10 +1,10 @@
 :root {
-  --black: #2C2347;
-  --primary: #5742AC;
+  --black: #2c2347;
+  --primary: #5742ac;
   --white: #ffffff;
   --bodyText: #676276;
-  --surface: #F5F4FB;
-  --ffLora: 'Lora', serif;
+  --surface: #f5f4fb;
+  --ffLora: "Lora", serif;
 }
 
 /* CSS reset */
@@ -16,7 +16,7 @@
 
 body {
   color: var(--black);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 a {
@@ -63,7 +63,6 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   list-style: none;
-
 }
 
 .navbar li {
@@ -188,10 +187,10 @@ nav {
   grid-row-gap: 1rem;
 }
 
-
 .blogPost1 {
   grid-area: 1/1/2/4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -199,7 +198,6 @@ nav {
 }
 
 .blogPost2 {
-  background-color: purple;
   grid-area: 1 / 4 / 2 / 7;
 }
 
@@ -238,3 +236,45 @@ nav {
 .blogPost11 {
   grid-area: 5 / 5 / 6 / 7;
 }
+
+.blogContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  background-color: var(--surface);
+}
+
+.blogTeamDate {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.blogTeam {
+  text-transform: uppercase;
+}
+.blogDate {
+  color: var(--bodyText);
+}
+.blogTitle {
+  font-size: 2rem;
+  font-family: var(--ffLora);
+  padding: 0.8rem 0px;
+}
+.blogText {
+  color: var(--bodyText);
+}
+.blogAuthor {
+  color: var(--bodyText);
+  padding: 0.8rem 0px;
+}
+.post img,
+.post iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+}
+
+
