@@ -29,6 +29,7 @@ a {
 .btn {
   display: inline-block;
   border: none;
+  outline: none;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
   font-size: 1.2rem;
@@ -208,10 +209,43 @@ nav {
   grid-area: 1 / 4 / 2 / 7;
 }
 
-.blogBtn {}
-
 .blogPost3 {
   grid-area: 2 / 1 / 3 / 7;
+  background-image: url('/images/slides/bulb.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog3Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.10);
+  color: var(--white);
+  backdrop-filter: blur(20px);
+  margin: 78px 220px;
+  padding: 50px;
+}
+
+.blog3Container h3 {
+  font-size: 2.25rem;
+}
+
+.blog3Container p {
+  padding: 10px;
+}
+
+.blog3Container button {
+  padding: 12px 32px;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
 }
 
 .blogPost4 {
@@ -308,7 +342,7 @@ nav {
 
 .playBtnContainer {
   position: absolute;
-  top: calc(100% - 286px);
+  top: 50%;
   right: 0;
   cursor: pointer;
 }
