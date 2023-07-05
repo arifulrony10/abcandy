@@ -76,5 +76,30 @@ const blogSwiper = new Swiper(".blogSwiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
+    },
 });
+
+
+
+// video modal
+
+let playBtn = document.querySelector('.videoModal')
+let clip = document.querySelector('.clip')
+let video = document.querySelector('video')
+const playBtnContainer = document.querySelector('.playBtnContainer')
+
+
+const watchNowBtn = document.querySelector('.playBtnContainer')
+const watchNowCloseBtn = document.querySelector('.videoModalCloseBtn')
+
+watchNowBtn.onclick = () => {
+    playBtn.classList.add('active')
+    clip.classList.add('active')
+    video.play()
+}
+
+watchNowCloseBtn.onclick = () => {
+    playBtn.classList.remove('active')
+    clip.classList.remove('active')
+    video.pause()
+}
