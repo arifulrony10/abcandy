@@ -354,6 +354,11 @@ nav {
   color: var(--white);
 } */
 
+
+.videoModal {
+  display: none;
+}
+
 .videoModal.active {
   position: fixed;
   width: 100vw;
