@@ -38,7 +38,7 @@ const swiper = new Swiper(".heroSwiper", {
   grabCursor: true,
   slidesPerView: 3,
   spaceBetween: 30,
-  // loop: true,  // infinity loop
+  loop: true,  // infinity loop
 });
 
 /* blog swipper */
