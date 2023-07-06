@@ -96,20 +96,9 @@ const blog9 = document.querySelector(".blogPost9");
 const blog10 = document.querySelector(".blogPost10");
 const blog11 = document.querySelector(".blogPost11");
 
-const openForm = document.querySelector(".openFormModal");
+const openForm = document.querySelectorAll(".openFormModal");
 const formModal = document.querySelector(".formModal");
-const formCloseBtn = document.querySelector(".formModalCloseBtn");
-
-watchNowBtn.onclick = () => {
-  playBtn.classList.add("active");
-  clip.classList.add("active");
-  video.play();
-};
-watchNowBtn2.onclick = () => {
-  playBtn.classList.add("active");
-  clip.classList.add("active");
-  video.play();
-};
+const formCloseBtn = document.querySelectorAll(".formModalCloseBtn");
 
 watchNowCloseBtn.onclick = () => {
   playBtn.classList.remove("active");
@@ -123,13 +112,23 @@ loadMoreBtn.onclick = () => {
   blog11.classList.add("active");
 };
 
-openForm.onclick = () => {
-  console.log("Working");
-  formModal.classList.add("active");
+const openFormFn = () => {
+  return formModal.classList.add("active");
+};
+const closeFormFn = () => {
+  return formModal.classList.remove("active");
 };
 
-formCloseBtn.onclick = () => {
-  formModal.classList.remove("active");
+const watchVideoFn = () => {
+  playBtn.classList.add("active");
+  clip.classList.add("active");
+  video.play();
+};
+
+const closeVideoFn = () => {
+  playBtn.classList.remove("active");
+  clip.classList.remove("active");
+  video.pause();
 };
 
 // hamburger

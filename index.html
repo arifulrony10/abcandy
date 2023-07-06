@@ -42,7 +42,14 @@
         <ul class="navbar">
           <li><a href="#" class="navlinks">Community</a></li>
           <li><a href="#blog" class="navlinks">Blog</a></li>
-          <li><a href="#" class="navlinks navBtn">Contact Us</a></li>
+          <li>
+            <a
+              href="#"
+              class="navlinks navBtn openFormModal"
+              onclick="openFormFn()"
+              >Contact Us</a
+            >
+          </li>
         </ul>
         <ul class="menu">
           <li><a href="#" class="navlinks">About</a></li>
@@ -50,7 +57,9 @@
           <li><a href="#" class="navlinks">What's New</a></li>
           <li><a href="#" class="navlinks">Community</a></li>
           <li><a href="#blog" class="navlinks">Blog</a></li>
-          <li><a href="#" class="navlinks">Contact Us</a></li>
+          <li>
+            <a href="#" class="navlinks" onclick="openFormFn()">Contact Us</a>
+          </li>
         </ul>
         <button class="hamburger">
           <i class="fa-solid fa-bars menuIcon"></i>
@@ -77,7 +86,7 @@
                   Consequatur optio ratione exercitationem officiis alias
                   reiciendis magnam necessitatibus maiores, facere ullam.
                 </p>
-                <a class="btn btn-primary">Click Me</a>
+                <a class="btn btn-primary">Read More</a>
               </div>
             </article>
             <article class="swiper-slide">
@@ -95,7 +104,7 @@
                   Consequatur optio ratione exercitationem officiis alias
                   reiciendis magnam necessitatibus maiores, facere ullam.
                 </p>
-                <a class="btn btn-primary">Click Me</a>
+                <a class="btn btn-primary">Read More</a>
               </div>
             </article>
             <article class="swiper-slide">
@@ -113,7 +122,7 @@
                   Consequatur optio ratione exercitationem officiis alias
                   reiciendis magnam necessitatibus maiores, facere ullam.
                 </p>
-                <a class="btn btn-primary">Click Me</a>
+                <a class="btn btn-primary">Read More</a>
               </div>
             </article>
             <article class="swiper-slide">
@@ -131,7 +140,7 @@
                   Consequatur optio ratione exercitationem officiis alias
                   reiciendis magnam necessitatibus maiores, facere ullam.
                 </p>
-                <a class="btn btn-primary">Click Me</a>
+                <a class="btn btn-primary">Read More</a>
               </div>
             </article>
           </div>
@@ -206,9 +215,9 @@
               <!-- !TODO toutube -->
               <img src="./assets/images/thumbnail.png" alt="" />
               <div class="playBtnContainer">
-                <div class="playBtn">
+                <div class="playBtn" onclick="watchVideoFn()">
                   <p>Watch Now</p>
-                  <i class="fa-regular fa-circle-play"></i>
+                  <i class="fa-regular fa-circle-play" onclick="closeVideoFn()"></i>
                 </div>
               </div>
               <div class="blogContent">
@@ -221,7 +230,7 @@
                   auctor enim massa
                 </h3>
                 <div>
-                  <button class="btn btn-primary watchNow2">Watch Now</button>
+                  <button  onclick="watchVideoFn()" class="btn btn-primary watchNow2" >Watch Now</button>
                 </div>
               </div>
               <!-- blog post 3 -->
@@ -235,7 +244,12 @@
                   consectetur cras in nulla. Non suspendisse at ac enim.
                   Facilisi nulla tortor nec mollis faucibus odio sodales.
                 </p>
-                <button class="btn btn-white openFormModal">Let’s Talk</button>
+                <button
+                  class="btn btn-white openFormModal"
+                  onclick="openFormFn()"
+                >
+                  Let’s Talk
+                </button>
               </div>
             </article>
             <!-- blog post 4 -->
@@ -265,7 +279,10 @@
               <div class="post5Constainer">
                 <h3>Do you need any creative service for your business?</h3>
                 <div>
-                  <button class="btn btn-secondary openFormModal">
+                  <button
+                    class="btn btn-secondary openFormModal"
+                    onclick="openFormFn()"
+                  >
                     Let's Talk
                   </button>
                 </div>
@@ -448,8 +465,9 @@
               </div>
             </div>
           </form>
+          <div class="formModalCloseBtn" onclick="closeFormFn()">
           <div class="formModalCloseBtn">
-            <i class="fa-regular fa-circle-xmark"></i>
+            <i class="fa-regular fa-circle-xmark" ></i>
           </div>
         </div>
       </div>

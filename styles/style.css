@@ -18,6 +18,7 @@ body {
   font-family: "DM Sans", sans-serif;
   color: var(--black);
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -500,6 +501,8 @@ nav {
 }
 
 .videoModal.active video {
+  width: 70%;
+  height: 70%;
   border: 10px solid var(--white);
 }
 
@@ -633,83 +636,4 @@ footer ul {
 .footerCopyTerm a {
   color: var(--white);
   text-decoration: underline;
-}
-
-/* 
-
-.videoModal {
-  position: relative;
-}
-
-.videoModal .play {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background: var(--black);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 15px 25px #333;
-  transition: 0.5s;
-}
-
-.videoModal .play::before {
-  content: '';
-  position: absolute;
-  border: 25px solid var(--bodyText);
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid transparent;
-  transform: translateX(10px);
-}
-
-.videoModal.active .play {
-  box-shadow: 0 0 0 150vh #333;
-}
-
-.clip {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.clip video {
-  max-width: 80%;
-  outline: none;
-  border: 10px solid white;
-  display: none;
-  z-index: 1000;
-}
-
-.clip.active {
-  transition-delay: 0.5s;
-  transition: 0.5s;
-  z-index: 1000;
-}
-
-.clip.active video {
-  display: block;
-}
-
-.clip .close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
-  z-index: 1000;
-} */
-
-/* responsive */
-@media (max-width: 991px) {
-  .clip video {
-    max-width: 80%;
-  }
 }
