@@ -198,6 +198,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0;
+  gap: 20px;
 }
 
 .blogMenuContent {
@@ -205,6 +206,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .blogTitle {
@@ -256,8 +258,9 @@ nav {
   font-size: 1.2rem;
 }
 
-.blogSearch i {
+.blogSearch .blogSearchIcon {
   color: var(--black);
+  padding-left: 12px;
 }
 
 .blogGrid {
@@ -544,6 +547,18 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding: 0 20px;
+}
+.formHeader p {
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 .formBody {
   background: rgba(255, 255, 255, 0.7);
@@ -600,6 +615,7 @@ footer h4 {
 
 footer i {
   color: rgba(255, 255, 255, 0.6);
+  font-style: 2rem;
 }
 
 footer ul {
@@ -617,9 +633,10 @@ footer ul {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   padding: 20px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   margin-top: 15px;
   transition: 0.3s ease-in;
+  font-size: 1.2rem;
 }
 
 .footerIcons:hover {

@@ -166,7 +166,7 @@
             </div>
             <div class="blogMenuSearch">
               <form class="blogSearch">
-                <i class="fa-solid fa-magnifying-glass icon"></i>
+                <i class="fa-solid fa-magnifying-glass ico n blogSearchIcon"></i>
                 <input
                   type="text"
                   name="search"
@@ -420,7 +420,10 @@
       <div class="formModal">
         <div class="clip">
           <form action="">
-            <h2>Constact Us</h2>
+            <div class="formHeader">
+              <h2>Constact Us</h2>
+              <p onclick="closeFormFn()"><i class="fa-solid fa-xmark"></i></p>
+            </div>
             <div class="formBody">
               <div class="form-group">
                 <div class="name">
@@ -468,11 +471,7 @@
               </div>
             </div>
           </form>
-          <div class="formModalCloseBtn" onclick="closeFormFn()">
-          <div class="formModalCloseBtn">
-            <i class="fa-regular fa-circle-xmark" ></i>
-          </div>
-        </div>
+        
       </div>
     </main>
     <footer>
@@ -495,8 +494,7 @@
         </li>
         <li>
           <a href="#" target="_blank" class="footerIcons"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
+            ><i class="fa-brands fa-facebook-messenger"></i></a>
         </li>
       </ul>
       <div class="footerCopyTerm">
