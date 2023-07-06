@@ -31,10 +31,10 @@ const swiper = new Swiper(".heroSwiper", {
       },
     },
   },
-  slidesPerView: "auto",
+  // slidesPerView: "auto",
   centeredSlides: true,
   zoom: true,
-  // autoplay: true, // autoplay
+  autoplay: true, // autoplay
   grabCursor: true,
   slidesPerView: 3,
   spaceBetween: 30,

@@ -56,7 +56,7 @@
   background-color: var(--white);
   flex-basis: 60%;
   height: 100%;
-
+  margin: 0 auto;
 }
 
 .heroSwiper .swiper-slide.swiper-slide-prev {
