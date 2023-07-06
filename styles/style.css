@@ -155,6 +155,9 @@ nav {
   text-transform: capitalize;
   border-bottom: 1px solid transparent;
   transition: 0.25s ease-out;
+  padding: 7px 20px;
+  border: 1px solid transparent;
+
 }
 
 .navbar .navlinks:hover {
