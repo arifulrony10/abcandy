@@ -100,7 +100,6 @@ const openForm = document.querySelectorAll(".openFormModal");
 const formModal = document.querySelector(".formModal");
 const formCloseBtn = document.querySelectorAll(".formModalCloseBtn");
 
-
 watchNowCloseBtn.onclick = () => {
   playBtn.classList.remove("active");
   clip.classList.remove("active");
