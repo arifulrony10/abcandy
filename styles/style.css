@@ -81,7 +81,47 @@ nav {
   align-items: center;
   padding: 16px 20px;
   background-color: var(--white);
+  position: relative;
 }
+
+.hamburger {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+
+}
+
+.menu a {
+  display: inline-block;
+}
+
+.menu.showMenu {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--white);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+
+}
+
 
 .navbar {
   display: grid;

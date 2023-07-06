@@ -1,40 +1,49 @@
 
 const swiper = new Swiper(".heroSwiper", {
-    initialSlide: 1, // initial number
     lazy: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+
     // responsive
     breakpoints: {
+        220: {
+            slidesPerView: 1,
+        },
         320: {
             slidesPerView: 1,
+            initialSlide: 0, // initial number
 
         },
         640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 1,
+            initialSlide: 0, // initial number
+
         },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
+        1001: {
+            slidesPerView: 1,
+            initialSlide: 0, // initial number
+
         },
         1024: {
             slidesPerView: 3,
             spaceBetween: 80,
+            initialSlide: 1, // initial number
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
         },
     },
+    slidesPerView: "auto",
+    centeredSlides: true,
     zoom: true,
     // autoplay: true, // autoplay
     grabCursor: true,
-    centeredSlides: true,
     slidesPerView: 3,
     spaceBetween: 30,
     // loop: true,  // infinity loop
-    pagination: {
-        el: ".swiper-pagination",
-    },
+
 });
 
 
@@ -119,4 +128,15 @@ loadMoreBtn.onclick = () => {
     blog9.classList.add("active")
     blog10.classList.add("active")
     blog11.classList.add("active")
+}
+
+
+// hamburger
+const menu = document.querySelector('.menu')
+const hamburger = document.querySelector('.hamburger')
+const menuIcon = document.querySelector('.menuIcon')
+const closeIcon = document.querySelector('.closeIcon')
+
+hamburger.onclick = () => {
+    menu.classList.toggle('showMenu')
 }
