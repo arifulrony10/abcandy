@@ -55,6 +55,8 @@
 .heroSwiper .swiper-slide.swiper-slide-active {
   background-color: var(--white);
   flex-basis: 60%;
+  height: 100%;
+
 }
 
 .heroSwiper .swiper-slide.swiper-slide-prev {

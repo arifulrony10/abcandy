@@ -143,6 +143,9 @@
     margin: 20px auto;
     padding: 20px 0px;
   }
+  .swiper-pagination-bullets::after {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
