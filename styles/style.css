@@ -468,27 +468,29 @@ nav {
 
 }
 
-.videoModalBackdrop {
+/* .videoModalBackdrop {
   position: absolute;
   width: 100vw;
   height: 100%;
-  /* background-color: var(--black); */
+  background-color: var(--black);
   top: 0;
   left: 0;
   z-index: 2;
-}
+} */
 
-.videoModal {
+.videoModal,
+.formModal {
   display: none;
 }
 
-.videoModal.active {
+.videoModal.active,
+.formModal.active {
   position: fixed;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(44, 35, 71, 0.8);
+  background-color: rgba(44, 35, 71, 0.80);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,19 +501,80 @@ nav {
   border: 10px solid var(--white);
 }
 
-.videoModal.active .videoModalCloseBtn {
+.videoModal.active .videoModalCloseBtn,
+.formModal.active .formModalCloseBtn {
   z-index: 3;
   position: fixed;
-  top: 10px;
+  top: 40px;
   right: 1rem;
   color: var(--surface);
   font-size: 3rem;
   cursor: pointer;
 }
 
-.videoModal.active .videoModalCloseBtn:hover {
+.videoModal.active .videoModalCloseBtn:hover,
+.formModal.active .formModalCloseBtn:hover {
   color: red;
 }
+
+.formModal.active h2 {
+  font-size: 1.3rem;
+  background: var(--black);
+  backdrop-filter: blur(20px);
+  color: var(--white);
+  padding: 20px;
+}
+
+.formModal.active .form-group {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formModal.active .name,
+.formModal.active .email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.formBody {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(20px);
+  padding: 25px;
+}
+
+.formBody input,
+.formBody select {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.formBody .subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+}
+
+.formBody .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+}
+
+.formBody .message textarea {
+  width: 100%;
+  height: 100px;
+}
+
 
 /* footer */
 footer {

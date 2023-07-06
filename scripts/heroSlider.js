@@ -107,6 +107,12 @@ const blog9 = document.querySelector('.blogPost9')
 const blog10 = document.querySelector('.blogPost10')
 const blog11 = document.querySelector('.blogPost11')
 
+const openForm = document.querySelector('.openFormModal')
+const formModal = document.querySelector('.formModal')
+const formCloseBtn = document.querySelector('.formModalCloseBtn')
+
+
+
 watchNowBtn.onclick = () => {
     playBtn.classList.add('active')
     clip.classList.add('active')
@@ -128,6 +134,16 @@ loadMoreBtn.onclick = () => {
     blog9.classList.add("active")
     blog10.classList.add("active")
     blog11.classList.add("active")
+}
+
+openForm.onclick = () => {
+    console.log("Working")
+    formModal.classList.add('active')
+}
+
+formCloseBtn.onclick = () => {
+    formModal.classList.remove('active')
+
 }
 
 

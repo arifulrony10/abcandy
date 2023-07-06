@@ -217,7 +217,7 @@
               <h3>Creative team, intuitive solution</h3>
               <p>Lorem ipsum dolor sit amet consectetur. Enim vitae hendrerit consectetur cras in nulla. Non suspendisse
                 at ac enim. Facilisi nulla tortor nec mollis faucibus odio sodales.</p>
-              <button class="btn btn-white">Let’s Talk</button>
+              <button class="btn btn-white openFormModal">Let’s Talk</button>
             </div>
           </article>
           <!-- blog post 4 -->
@@ -243,7 +243,7 @@
             <div class="post5Constainer">
               <h3>Do you need any creative service for your business?</h3>
               <div>
-                <button class="btn btn-secondary">Let's Talk</button>
+                <button class="btn btn-secondary openFormModal">Let's Talk</button>
               </div>
             </div>
           </article>
@@ -369,6 +369,41 @@
       <div class="clip">
         <video src="notionhive.mp4" controls></video>
         <div class="videoModalCloseBtn"><i class="fa-regular fa-circle-xmark"></i></div>
+      </div>
+    </div>
+
+    <div class="formModal">
+      <div class="clip">
+        <form action="">
+          <h2>Constact Us</h2>
+          <div class="formBody">
+            <div class="form-group">
+              <div class="name">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email">
+              </div>
+
+            </div>
+            <div class="subject">
+              <label for="subject">Select Subject</label>
+              <select id="subject" name="subject" aria-placeholder="Select Subject">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message" placeholder="Your Message"></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="formModalCloseBtn"><i class="fa-regular fa-circle-xmark"></i></div>
       </div>
     </div>
   </main>
